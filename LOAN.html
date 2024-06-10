@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="images/LO.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="website icon" type="png" href="images/General Logo.png">
+    <title>Loan Application</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+.up{
+    background-color:#005290;
+    color: whitesmoke;
+    height: 50px;
+    padding-top: 10px;
+    position: sticky;
+    top: 1px;
+    z-index: 1;
+}
+.logo_nav{
+    padding: 3px;
+}
+.logo_nav,list{
+    display: flex;
+    justify-content: space-between;
+}
+.LN{
+    padding: 0px 5px;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+ul li{
+    padding: 10px;
+}
+ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px;
+}
+.alone{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 243, 244);
+    z-index: 0;
+}
+.abov{
+    z-index: 1;
+    background-color:darkblue;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.down{
+    background-color: rgb(200, 177, 139);
+    height: 15px;
+}
+.imaga{
+    height: 500px;
+    width:100%;
+    z-index:0;
+}
+.withApp{
+    color: rgb(0, 82, 149);
+}
+.loanD{
+    max-width: 600px;
+    max-height:300px;
+    border: none;
+    outline: none;
+    transform: translateY(-75%);
+    padding: 20px 0 50px;
+    background-color: white;
+    border-left:solid 10px #005290;
+    box-shadow: 0px 5px 10px black;
+    margin: 10px;
+}
+.HD{
+    color: rgb(0, 82, 149);
+}
+p{
+    font-size: 20px;
+}
+.Loan_application{
+    margin: 20px 80px;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    background-color: #f1f3f4;
+}
+input,label{
+    margin: 11px 50px;
+    border-radius:5px;
+}
+
+label{
+    color:rgb(0, 82, 149) ;
+    padding: 0;
+}
+input,#loanR{
+    width: 250px;
+    height: 40px;
+    border: solid 1px rgb(0, 82, 149) ;
+}
+.buttons{
+    cursor: pointer;
+    transition: 1s;
+    min-width: 200px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2.5px solid #E0E1E4;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+}
+button a{
+    text-decoration: none;
+}
+button:hover {
+background-color: #F2F2F2;
+box-shadow: 0px 0px 20px -18px;
+}
+
+button:active {
+transform: scale(0.95);
+}
+
+input:hover{
+    border: none;
+    outline: none;
+}
+.loanR{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 125px;
+    margin: 0;
+    padding: 0;
+}
+.buttonss{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.your{
+    margin: 11px  40px;
+}
+#loanR{
+    margin: 15px;
+}
+.gl{
+    margin-right: 123px;
+}
+.ml{
+    margin-right:155px;
+}
+.dm{
+    margin-right: 0;
+}
+.vs{
+    margin-right: -5px;
+}
+.la{
+    margin-right: -50px;
+}
+.ed{
+    margin: 0 55px;
+}
+.inc{
+    margin: 10px 45px;
+}
+.cb{
+    margin: 10px -20px;
+}
+.edd{
+    margin: 10px 45px;
+}
+    </style>
+</head>
+<body>
+    <div class="up">
+        <div class="logo_nav">
+            <h1 class="LN">BANK LOAN PREDICTION</h1>
+            <nav class="list">
+                <ul>
+                    <li><i class='bx bxs-home'></i><a href="Home.html">Home</a></li>
+                    <li><i class='bx bx-credit-card'></i><a href="card.html"> Credit-card</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="imaga">
+        <img src="images/BANKL.jpg" class="imaga">
+    <div class="loanD">
+        <h1 class="HD">Loans</h1>
+        <p>The Bank system provides a package of financing programs in the field of housing, 
+        consumer or car loans to help you achieve your dreams and desires</p>
+    </div>
+    </div>
+    <div class="alone">
+        <h1>Apply Now</h1>
+    </div>
+    <div class="down">
+    </div>
+    <h1 class="withApp">Your Personal Information :</h1>
+    <div class="Loan_application">
+        <form action="#" method="post">
+            <label for="Loanamount" class="la">How much Loan amount do you want?</label>
+            <input type="number" name="Loanamount" placeholder="Loanamount" required><br>
+            <label for="Credit_History">Have you borrowed money before?</label>
+            <input type="text" name="Credit_History" placeholder="Credit_History" required class="cb"   maxlength="1" oninput="validateInput(event)"><br>
+            <script>
+                function validateInput(event) {
+                    const input = event.target;
+                    const value = parseInt(input.value);
+        
+                    if (isNaN(value) || value > 1) {
+                        input.value = '';
+                    }
+                }
+            </script>
+            <label for="How much is your income?">How much is your income?</label>
+            <input type="number" name="How much is your income?" placeholder="Applicant Income" required class="inc"><br>
+            <label for="Co applicant Income" class="vs">How much Co applicant Income?</label>
+            <input type="number" name="Co applicant Income" placeholder="Co applicant Income" required class="dm"><br>
+            <div class="Gender">
+                <label for="Gender" class="gl">What is your Gender:</label>
+            <select id="loanR" name="LoanR">
+                <option value="female">female</option>
+                <option value="male" selected>male</option>
+              </select><br>
+              <label for="Married" class="ml"> Are you married ?</label>
+              <select id="loanR" name="Married">
+                  <option value="yes" selected>Yes</option>
+                  <option value="no">No</option>
+                </select><br>
+            </div>
+            <label for="Education" class="ed">what is your Education status?</label>
+            <select id="loanR" name="Education">
+                <option value="Graduate" selected>Graduate</option>
+                <option value="NonGraduate">NonGraduate</option>
+              </select><br>
+              <label for="self-Employee" class="edd">do you follow any firm or group?</label>
+              <select id="loanR" name="self-Employee">
+                  <option value="Graduate" selected>yes</option>
+                  <option value="NonGraduate">No</option>
+                </select><br>
+                <label for="Property_area" class="edd">What is the purpose of the loan?</label>
+                <select id="loanR" name="Property_area">
+                    <option value="Urban" selected>Urban</option>
+                    <option value="Rural">Rural</option>
+                    <option value="sumiurban">sumiurban</option>
+                  </select><br>
+              <div class="buttonss">
+                <button class="buttons">Submit</button>
+            </div>
+        </form>
+    </div>
+        <button class="buttons"><a href="Main.html">Back main page</a></button>
+</body>
+</html>

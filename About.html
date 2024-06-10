@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="images/General Logo.png">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .nav{
+        background-color: rgb(0, 100, 0);
+        margin:  10px auto;
+        width: 50%;
+        height: 50px;
+        border-radius: 30px;
+    }
+    .ul , a,#home{
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        position: relative;
+        top: 2px;
+        font-family: Courgette;
+        text-decoration-style: none;
+        font-size: 25px;
+    }
+    li a:hover{
+        transform: scale(1.1);
+    }
+    li a{
+        animation-name:color ;
+        animation-duration: 6s;
+        animation-timing-function: ease-in;
+        animation-delay: 1.5s;
+        animation-iteration-count: 1000;
+    }
+    @keyframes color {
+        0%{
+            color: white;
+        }
+        60%{
+            color:cornflowerblue;
+        }
+    }
+    h1{
+        color: darkblue;
+        text-align: center;
+        font-size: 50px;
+        font-family: Courgette;
+    }
+    .h2{
+        padding: 20px;
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .con{
+        margin: 20px 300px ;
+    }
+    h3{
+        font-family: Courgette;
+        color: blueviolet;
+    }
+    .con2{
+        margin: 20px 100px;
+    }
+</style>
+<body>
+    <div class="nav">
+        <nav>
+            <ul class="ul">
+                <li class="ul"><i class='bx bx-home' style="color: white;" id="home"></i><a href="Home.html">Home page</a></li>
+                <li class="ul"><i class='bx bx-log-in' style="color: white;" id="home"></i><a href="LoginU.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header">
+        <h1>About Us!</h1>
+    </div>
+    <div class="h2">
+        <ul>
+            <li><h2>At our bank, we've developed a smart system to help make loan decisions quicker and fairer for everyone. Here's how it works:</h2></li>
+        </ul>
+        <div class="con">
+            <ol>
+                <li><h3>Understanding Your Data</h3></li>
+            </ol>
+            <div class="con2">
+                <ul>
+                    <li>We gather important details from you, like your income, job status, and credit history.</li>
+                    <li>We clean up and organize this information to make sure it's accurate and reliable</li>
+                </ul>
+            </div>
+        </div>
+        <div class="con">
+            <ol start="2">
+                <li><h3> Finding What Matters</h3></li>
+            </ol>
+            <div class="con2">
+                <ul>
+                    <li>Our system looks at key factors that affect loan decisions, such as your income level and past borrowing behavior.</li>
+                    <li>We use this information to predict how likely you are to repay a loan on time.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="con">
+            <ol start="3">
+                <li><h3> Making Smart Predictions</h3></li>
+            </ol>
+            <div class="con2">
+                <ul>
+                    <li>We've trained our system to learn from past loan data.</li>
+                    <li>Using advanced technology, it evaluates your application and gives us a clear idea of your creditworthiness.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="con">
+            <ol start="4">
+                <li><h3>  Fair and Transparent Decisions</h3></li>
+            </ol>
+            <div class="con2">
+                <ul>
+                    <li>Our goal is to be fair to everyone.</li>
+                    <li>We use these predictions to make consistent decisions, ensuring everyone gets a fair shot at getting the loan they need.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="con">
+            <ol start="5">
+                <li><h3>Always Improving</h3></li>
+            </ol>
+            <div class="con2">
+                <ul>
+                    <li>We regularly update and improve our system to keep up with changing trends and regulations.</li>
+                    <li>This helps us make even better decisions and serve you more effectively.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="con">
+            <ol start="5">
+                <li><h3> Predicting Your Path</h3></li>
+            </ol>
+            <div class="con2">
+                <ul>
+                    <li>Using fancy math and smart algorithms, we predict the likelihood of you paying back a loan.</li>
+                    <li>This helps us make fair decisions about who gets approved</li>
+                </ul>
+            </div>
+        </div>
+        <div class="con">
+            <ol start="5">
+                <li><h3>Sorting Through the Details</h3></li>
+            </ol>
+            <div class="con2">
+                <ul>
+                    <li>Our system looks at all the info you've provided to understand your financial situation.</li>
+                    <li>We focus on things like your income stability and credit history to see if you're a good fit for a loan.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
